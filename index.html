@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List with Drag and Drop</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Todo List</h2>
+        <ul id="todoList" class="todo-list" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <!-- Todo items will be dynamically added here -->
+        </ul>
+        <input type="text" id="newTodo" placeholder="Add a new todo" onkeydown="addTodo(event)">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
